@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steganography App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0px;
+            padding: 0;
+            background-color: #f4f4f4; /* Light background for the whole page */
+            display: flex; /* Use flexbox for centering */
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            height: 100vh; /* Full viewport height */
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0; /* Remove margin to center the container */
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-box {
+            border: 1px solid #ccc; /* Border for the box */
+            border-radius: 8px;     /* Rounded corners */
+            padding: 20px;          /* Padding inside the box */
+            margin-bottom: 20px;    /* Space between boxes */
+            background-color: #f9f9f9; /* Light background for the box */
+        }
+
+        form {
+            margin: 0; /* Remove margin from forms */
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px; /* Space above and below labels */
+        }
+
+        input[type="file"],
+        textarea {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box; /* Include padding and border in width */
+        }
+
+        textarea {
+            resize: vertical; /* Allows vertical resizing only */
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            background-color: #007BFF;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s; 
+        }
+
+        button:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+
+        .result, .error {
+            margin-top: 20px;
+            text-align: center;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Steganography App</h1>
+        
+        <div class="form-box">
+            <h2>Hide a Message</h2>
+            <form id="hideForm" action="/static" method="POST" enctype="multipart/form-data">
+                <label for="hideImage">Select Image:</label>
+                <input type="file" id="hideImage" name="image" accept="image/png, image/jpeg" required>
+                <label for="message">Message to Hide:</label>
+                <textarea id="message" name="secret_message" rows="4" placeholder="Enter message to hide..." required></textarea>
+                <button type="submit">Hide Message</button>
+            </form>
+        </div>
+
+        <div class="form-box">
+            <h2>Extract a Message</h2>
+            <form id="extractForm" action="/extract" method="POST" enctype="multipart/form-data">
+                <label for="extractImage">Select Image:</label>
+                <input type="file" id="extractImage" name="image" accept="image/png, image/jpeg" required>
+                <button type="submit">Extract Message</button>
+            </form>
+        </div>
+
+        <div class="result" id="result">
+              <!-- Result will be displayed here after form submission  -->
+        </div>
+        <div class="error" id="error-message">
+             <!-- Error messages will be displayed here  -->
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
