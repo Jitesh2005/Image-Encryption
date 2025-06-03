@@ -44,7 +44,7 @@ body {
 
 
 button1 {
-  background-color: #007BFF;
+  background-color: 007BFF;
   /* Blue background */
   color: white;
   /* White text */
@@ -54,7 +54,7 @@ button1 {
   font-size: 16px;
   cursor: pointer;
   outline: none;
-  box-shadow: 0 0 15px #007BFF;
+  box-shadow: 0 0 15px 007BFF;
 }
 
 button1:hover {
