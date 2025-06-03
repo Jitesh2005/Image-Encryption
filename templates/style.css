@@ -1,123 +1,154 @@
 body {
   background-color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
+/* Logo Style */
+.logo {
+  height: 100px;
+  width: auto;
+}
+
+/* Marquee */
+.marquee {
+  font-size: 20px;
+  color: brown;
+  font-weight: bold;
+  background-color: #fff3cd;
+  padding: 10px;
+}
+
+/* Header Name */
+.name {
+  font-size: 35px;
+  color: #0033cc;
+  text-align: center;
+  width: 100%;
+}
+
+/* Header Links */
+.link1,
+.link2,
+.link3 {
+  font-size: 18px;
+  color: #003366;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.link1:hover,
+.link2:hover,
+.link3:hover {
+  text-decoration: underline;
+}
+
+/* Top Navigation Bar (Blue) */
+.link4 {
+  font-size: 14px;
+  color: white;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.link4:hover {
+  text-decoration: underline;
+}
+
+.search {
+  text-align: right;
+  padding: 5px;
+}
+
+.search input {
+  padding: 4px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search button {
+  padding: 4px 10px;
+  background-color: #007BFF;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.search button:hover {
+  background-color: #0056b3;
+}
+
+/* Hero Image Section */
 #image {
   background-repeat: no-repeat;
   height: 70vh;
   background-size: cover;
 }
 
-.name {
-  font-size: 25px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color: blue;
-  width: 65%;
-  text-align: center;
-  font-size: 35px;
-}
-
-.link1,
-.link2,
-.limk3 {
-  font-size: 20px;
-  text-align: right;
-}
-
-.link4 {
-  font-size: 12.5px;
-  text-align: right;
+/* Buttons */
+.button {
+  background-color: #007BFF;
   color: white;
-  text-decoration: none;
-}
-
-.search {
-  font-size: 12.5px;
-  text-align: right;
-  align-content: center;
-}
-
-.logo {
-  height: 150px;
-  width: 100%;
-}
-
-
-button1 {
-  background-color: 007BFF;
-  /* Blue background */
-  color: white;
-  /* White text */
   border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
+  border-radius: 6px;
+  padding: 12px 24px;
   font-size: 16px;
   cursor: pointer;
-  outline: none;
-  box-shadow: 0 0 15px 007BFF;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
 }
 
-button1:hover {
+.button:hover {
   background-color: #0056b3;
 }
 
-
+/* Info Section */
 .info {
-  width: 41%;
   color: white;
+  font-size: 14px;
+  text-align: left;
+  padding-left: 10px;
 }
 
 .info2 {
-  width: 65%;
   color: white;
   text-align: center;
+  font-size: 14px;
+  padding: 10px 0;
 }
 
+/* Social Media Icons */
 .fa {
   padding: 10px;
-  font-size: 10px;
+  font-size: 16px;
   width: 35px;
-  text-align: right;
+  text-align: center;
   text-decoration: none;
+  border-radius: 50%;
 }
 
-/* Add a hover effect if you want */
 .fa:hover {
-  opacity: 0.7;
-  color: #ffffff;
+  opacity: 0.8;
+  color: #fff;
 }
 
-/* Set a specific color for each brand */
-/* Facebook */
-.fa-facebook {
-  color: goldenrod;
-}
-
-/* Twitter */
-.fa-twitter {
-  color: goldenrod;
-}
-
-/* Instagram */
-.fa-instagram {
-  color: goldenrod;
-}
-
-/* Linkedin */
+.fa-facebook,
+.fa-twitter,
+.fa-instagram,
 .fa-linkedin {
+  background-color: #003366;
   color: goldenrod;
 }
 
+/* Content section */
 .Content {
-  height: 1000px;
+  min-height: 800px;
+  padding: 20px;
 }
 
+/* Images */
 .images {
   width: 250px;
-}
-
-.marquee {
-  font-size: 20px;
-  color: brown;
-  font-weight: bold;
+  height: auto;
 }
