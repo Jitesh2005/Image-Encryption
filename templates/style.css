@@ -1,64 +1,76 @@
 body {
-        background-color: white;
-    }
-
-.name{
-    font-size: 25px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: blue;
-    width: 65%;
-    text-align: center;
-    font-size: 35px;
+  background-color: white;
 }
 
-.link1, .link2, .limk3{
-    font-size: 20px;
-    text-align: right;
+#image {
+  background-repeat: no-repeat;
+  height: 70vh;
+  background-size: cover;
 }
 
-.link4{
-    font-size: 12.5px;
-    text-align: right;
-    color: white;
-    text-decoration: none;
+.name {
+  font-size: 25px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: blue;
+  width: 65%;
+  text-align: center;
+  font-size: 35px;
 }
 
-.search{
-    font-size: 12.5px;
-    text-align: right;
-    align-content: center;
+.link1,
+.link2,
+.limk3 {
+  font-size: 20px;
+  text-align: right;
 }
-.logo{
-    height: 150px;
-    width: 100%;
+
+.link4 {
+  font-size: 12.5px;
+  text-align: right;
+  color: white;
+  text-decoration: none;
+}
+
+.search {
+  font-size: 12.5px;
+  text-align: right;
+  align-content: center;
+}
+
+.logo {
+  height: 150px;
+  width: 100%;
 }
 
 
-button1{
-  background-color: #007BFF; /* Blue background */
-    color: white; /* White text */
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    outline: none;
-    box-shadow: 0 0 15px #007BFF;
+button1 {
+  background-color: #007BFF;
+  /* Blue background */
+  color: white;
+  /* White text */
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0 0 15px #007BFF;
 }
+
 button1:hover {
   background-color: #0056b3;
 }
 
 
-.info{
-    width: 41%;
-    color: white;
+.info {
+  width: 41%;
+  color: white;
 }
 
-.info2{
-    width: 65%;
-    color: white;
-    text-align: center;    
+.info2 {
+  width: 65%;
+  color: white;
+  text-align: center;
 }
 
 .fa {
@@ -96,15 +108,16 @@ button1:hover {
   color: goldenrod;
 }
 
-.Content{
-    height: 1000px;
-}
-.images{
-    width: 250px;
+.Content {
+  height: 1000px;
 }
 
-.marquee{
-    font-size: 20px;
-    color: brown;
-     font-weight: bold;
+.images {
+  width: 250px;
+}
+
+.marquee {
+  font-size: 20px;
+  color: brown;
+  font-weight: bold;
 }
